@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // register service worker
 
 if ('serviceWorker' in navigator) {
