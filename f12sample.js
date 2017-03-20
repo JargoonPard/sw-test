@@ -6,7 +6,10 @@ function getServiceWorkerDetails() {
     debugger;
 
     navigator.serviceWorker.getRegistrations().then(function (registrations) {
-        document.querySelector('#status').textContent = 'ServiceWorkerRegistrations found.';
+        for ( let i = 0, j = registrations.length; i <j; i++){
+            registration = registrations[i];
+            console.log(`Registration ${i} retrieved`);
+        }
     });
 
 }
